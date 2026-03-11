@@ -1,25 +1,27 @@
 <template>
-  <h1> Nuevo Componente</h1>
+  <main class="container">
+    <h1 class="text-center">Probando Directivas Vue</h1>
+    <UsersComponent />
+  </main>
 </template>
 
 <script>
+import UsersComponent from '@/components/UsersComponent.vue';
+
 export default {
   name: 'component-name',
   // props: {},
   data: function () {
     return {
-      usuarios: [
-        { nombre: 'Ana', edad: 28 },
-        { nombre: 'Luis', edad: 34 },
-        { nombre: 'María', edad: 22 },
-        { nombre: 'Carlos', edad: 45 }
-      ]
+
     }
   },
   // computed: {},
   //methods: {},
   // watch: {},
-  // components: {},
+  components: {
+    UsersComponent
+  },
   // mixins: [],
   // filters: {},
   // -- Lifecycle Methods
